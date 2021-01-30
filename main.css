@@ -1,0 +1,136 @@
+body {
+  overflow-x: hidden;
+}
+
+.big {
+  display: block;
+}
+
+.small, .phone {
+  display: none;
+}
+
+header, nav {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+header .fab {
+  color: rgb(70, 40, 75);
+  transition: .5s;
+}
+
+header .fab:hover {
+  color: darkcyan;
+  cursor: pointer;
+}
+
+.btn-web {
+  background-color: rgb(70, 40, 75);
+  border-color: lightgrey;
+}
+
+.btn-web:hover {
+  background-color: darkcyan;
+  border-color: darkcyan;
+}
+
+nav {
+  background-color: darkcyan;
+}
+
+.nav-item {
+  padding-left: 1%;
+  padding-right: 1%;
+  border-left: solid 1px lightgrey;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-item:first-child {
+  border-left: none;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+article #game {
+  background-color: rgb(30, 10, 35);
+  color: white;
+}
+
+
+article .headline {
+  position: relative;
+  margin: 0 auto;
+}
+
+article .headline img {
+  vertical-align: middle;
+}
+
+article .headline .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  height: 100%;
+  width: 65%;
+  padding: 20px;
+  z-index: 2;
+  font-size: 1vw;
+
+}
+
+article .card {
+  height: 100%;
+}
+
+
+article .card-quote {
+  height: auto;
+  background-color: transparent;
+  color: white;
+}
+
+
+footer {
+  background-color: rgb(30, 10, 35);
+  color: white;
+}
+
+footer .fab {
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .big, .phone {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 678px) {
+  .big, .small {
+    display: none;
+  }
+
+  .phone {
+    display: block;
+  }
+}

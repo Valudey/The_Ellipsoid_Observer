@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="favicon.ico">
+	<title>The Ellipsoid Observer</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div class="big">
+		<header>
+			<div class="row">
+				<div class="col-3">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+				<div class="col-6"></div>
+				<div class="col-3">
+					<div class="row">
+						<button type="button" class="btn btn-web btn-primary">Subscribe now</button>
+						<button type="button" class="btn btn-web btn-primary ml-2">Log in</button>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-2">
+					<p id="date"></p>
+				</div>
+				<script>
+					let date = new Date();
+					document.getElementById("date").innerHTML = date.toDateString();
+				</script>
+				<div class="col-8">
+					<img alt="Vue logo" src="./assets/monde.png" style="width: 60%">
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</header>
+
+		
+
+		<nav>
+			<div>
+				<a class="nav-item">Earth Science</a>
+				<a class="nav-item">Biology</a>
+				<a class="nav-item">Physics</a>
+				<a class="nav-item">Chemistry</a>
+				<a class="nav-item">Mathematics</a>
+				<a class="nav-item">Computer Science</a>
+				<a class="nav-item">Astronomy</a>
+				<a href="http://www.ustream.tv/channel/iss-hdev-payload" class="btn btn-warning" target="blank" style="color: rgb(30, 10, 35)"><b>ISS LIVE</b></a>
+			</div>
+		</nav>
+
+		<article>
+			<div class="headline">
+				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+					<ul class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./assets/socialmedia.png" alt="Los Angeles" class="d-block w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/tweet.png" alt="Chicago" class="d-block w-100">
+						</div>
+					</div>
+		    	</div>
+				<div class="content">
+					<h2>Machines reading comprehension development to monitor social media. Problem: How to recognize irony? </h2>
+					<hr style="background-color: darkcyan">
+				    <p>With the ban of Trump from Twitter and a lot of other social media we are a lot more akin to speak about the subject of whether the platform is responsible for its content or not. And, to monitor its platform, Twitter and a lot of other social media opted for machine comprehension (reading or vocal) coupled with human check. But can we completely remove the human part in all that process? That’s the question we are trying to develop today.
+				    <br><br>
+				    The biggest problem against this development according to me is irony. Ans more specifically in machine reading comprehension. Irony is the process of telling something while making understand others that we mean the opposite. And in oral comprehension it’s more or less easier to catch because of the tone of the person. But when the sentences are written, it become much more difficult because you need to know the person to catch the irony. So, an AI would need to learn to know each people of the platform, and to be able to adapt itself to them. That is a big problem because the AI would need a humongous lot of computing power to do that.
+					<br><br>
+					To remediate this, we could separate people in groups by personality and adapt the AI to each of the groups. I think research is needed in that field, and is probably already being conducted in a lot of lab. </p>
+					<div class="row">
+						<div class="col-9">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read more</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container mt-5 mb-5">
+				<div class="row">
+					<div class="col">
+						<div class="card border-primary mb-3">
+						  	<h4 class="card-header"><i class="fas fa-square-root-alt text-primary"></i> - Mathematics</h4>
+						  	<div class="card-body text-primary">
+						  		<h5 class="card-title pb-3 border-bottom border-primary"><a href="" class="text-primary">Coronavirus death tolls: Why the daily mortality figures can't reflect the true numbers?</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-primary">Maths aversion: A story of abstract and irrelevant figures</a></h5>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-secondary mb-3">
+						  	<h4 class="card-header"><i class="fas fa-atom text-secondary"></i> - Physics</h4>
+						  	<div class="card-body text-secondary">
+						    	<h5 class="card-title pb-3 border-bottom border-secondary"><a href="" class="text-secondary">Macron's quantum plan for investments: But what is quantum physic?</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-secondary">Head trauma: physical properties of eggs to better understand the impact on the brain</a></h5>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-success mb-3">
+						  	<h4 class="card-header"><i class="fas fa-feather-alt text-success"></i> - Biology</h4>
+						  	<div class="card-body text-success">
+						    	<h5 class="card-title pb-3 border-bottom border-success"><a href="" class="text-success">Von Der Leyen: Biodiversity needs its own Paris Agreement</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-success">Pandemy: How is Darwin getting his revenge on Pasteur?</a></h5>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-danger mb-3">
+						  	<h4 class="card-header"><i class="fas fa-laptop-code text-danger"></i> - Computer Science</h4>
+						  	<div class="card-body text-danger">
+						  		<h5 class="card-title pb-3 border-bottom border-danger"><a href="" class="text-danger">Terminator: Do we have to be scared of AIs?</a></h5>
+						  		<h5 class="card-title pb-3 border-bottom border-danger"><a href="" class="text-danger">Massive PS5 purchase: How do scalping bots work?</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-danger">Hospital hacks: Why does it seem so simple?</a></h5>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-6">
+						<div class="card border-warning mb-3">
+						  	<h4 class="card-header"><i class="fas fa-space-shuttle text-warning"></i> - Astronomy</h4>
+						  	<div class="card-body">
+						  		<div class="row">
+							    	<div class="col-7">
+										<h5 class="card-title pb-3 border-bottom border-warning"><a href="" class="text-dark">Space: the most lucrative tourist destination</a></h5>
+										<h5 class="card-title pb-3 border-bottom border-warning"><a href="" class="text-dark">Why can't we see the far side of the moon?</a></h5>
+										<h5 class="card-title"><a href="" class="text-dark">Scientists' farewell to Arecibo: How does a telescope work?</a></h5>
+									</div>
+									<div class="col border-left border-warning">
+										<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning"><b>ISS LIVE</b></a>
+							    		<p class="card-text">Looking for high definition views of Earth from the space station?<br>Visit the<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="text-warning ml-2">ISS HD Earth Viewing Experiment</a> (HDEV) on UStream.</p>
+							    		
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-info mb-3">
+						  	<h4 class="card-header"><i class="fas fa-globe-europe text-info"></i> - Earth Science</h4>
+						  	<div class="card-body">
+						    	<h5 class="card-title pb-3 border-bottom border-info"><a href="" class="text-dark">New earthquakes in Eastern Europe: How are they caused?</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-dark">Martian mineral, rare on Earth, found locked in Antarctic ice: How is this possible?</a></h5>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-dark mb-3">
+						  	<h4 class="card-header"><i class="fas fa-flask text-dark"></i> - Chemistry</h4>
+						  	<div class="card-body text-dark">
+						    	<h5 class="card-title pb-3 border-bottom border-dark"><a href="" class="text-dark">What is molecular gastronomy?</a></h5>
+						    	<h5 class="card-title"><a href="" class="text-dark">How COVID-19 has planted the pharmaceutical companies in the spotlights?</a></h5>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+			    <div class="card" id="game">
+				  <div class="row">
+				    <div class="col-5">
+					    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+							<ul class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./assets/art1.png" alt="Los Angeles" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art2.png" alt="Chicago" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art3.png" alt="New York" class="d-block w-100">
+								</div>
+							</div>
+				    	</div>
+				    </div>
+				    <div class="col-7">
+				      <div class="card-body pr-5">
+				        <h2 class="card-title">Special art exhibition taking place at the Tate Modern that will blow your perspectives and get your mathematical perception upside-down</h2>
+				        <hr style="background-color: darkcyan">
+				        <p class="card-text">The mathematics arrive at the Tate Modern for a period of three months. Many artists and mathematicians will exhibit their works from March 3. We will notably find in this exhibition Matt Enlow, Stephen Kenny, Aaron Moran... 
+				        <br><br>
+				        In his color pencil drawing “Nine Point Circle and Euler Line for an Acute Angle”, Kenny explores the concept of complex geometric constructions to create straight-edge wedges of color. A Nine Point Circle is constructed in reference to a particular triangle. The nine points consist of: the midpoints of each of the three sides, the foot of each of the three altitudes, and the mid point between each vertex and the orthocenter (the point where the three altitudes intersect).
+				    	<br><br>
+				    	Different series, different formats, different colors, with his wooden structures, Aaron Moran is playing with perspectives to create a 3D vision of a 2D work.</p>
+				        <div class="row">
+							<div class="col-9">
+								<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-web btn-primary">Read more</button>
+							</div>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-7 p-5">
+					<h2>Paris Agreement under the United Nations Framework Convention on Climate Change could lead to a development of the measures against the Greenhouse gases</h2>
+					<hr style="background-color: darkcyan">
+					<p>The Paris Agreement on climate change is the first universal, legally binding global climate agreement. It was signed on 22 April 2016 and ratified by the European Union on 5 October 2016. This agreement aims to strengthen the global response to the threat of climate change, including by limiting global warning to well below 2°C.
+					<br><br>
+					Obviously, to reach that objective, this agreement will help reduce the greenhouse gases emission such as CO2. To do that the agreement key point are:
+					<br>
+					<ul>
+						<li>preparing and applying national plans to meet the targeted reduction;</li>
+						<li>reporting to each other and to the public on the progress they are making on their commitments;</li>
+						<li>conducting a planet-wide stocktake every 5 years, from 2023, with international partners, to set further targets based on scientific evidence and the results achieved;</li>
+						<li>taking measures to deal with the impact of climate changes that are already unavoidable;</li>
+						<li>providing practical and financial support to developing countries, to help them adapt to climate change.</li>
+					</ul>
+					Hopefully for us this agreement will improve our situation. </p>
+
+					<div class="row">
+						<div class="col-8">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read more</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 p-5 mr-1" style="background-color: darkcyan">
+					<div class="card card-quote mb-3">
+						<h2 class="card-header"><i class="fas fa-image text-warning"></i> - Image of the month</h2>
+						<div class="card-body">
+							<div class="card pb-5">
+								<div class="card-body">
+						    		<img src="./assets/aurore.png" alt="Los Angeles" class="d-block w-100">
+						    		<p style="color: grey"><small><small>A polar aurora, called "boreal" - © Egil Sjøholt / Pexels</small></small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr style="background-color: lightgrey" class="mt-5 mb-5">
+					<div class="card card-quote mb-3">
+						<h2 class="card-header"><i class="fas fa-quote-right text-warning"></i> - Quote of the month</h2>
+						<div class="card-body">
+						    <blockquote style="color: lightgrey"><i class="text-warning">“Science and everyday life cannot and should not be separated.”</i><br>– Rosalind Franklin</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<footer>
+			<div class="row ml-5 pt-5 mb-2">
+				<img alt="Vue logo" src="./assets/monde-white.png">
+			</div>
+
+			<div class="row ml-5 pt-3">
+				<div class="col-9">
+					<a class="nav-item">Earth Science</a>
+					<a class="nav-item">Biology</a>
+					<a class="nav-item">Physics</a>
+					<a class="nav-item">Chemistry</a>
+					<a class="nav-item">Mathematics</a>
+					<a class="nav-item">Computer Science</a>
+					<a class="nav-item">Astronomy</a>
+				</div>
+				<div class="col-3">
+					<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning" style="color: rgb(30, 10, 35)"><b>ISS LIVE</b></a>
+				</div>
+			</div>
+
+			<hr style="background-color: grey">
+
+			<div class="row pb-4">
+				<div class="col-8 ml-5">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+
+				<div class="col-3" >
+					<p><small>© The Ellipsoid Observer 2021</small></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="small">
+		<header>
+			<div class="row">
+				<div class="col-3">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+				<div class="col-5"></div>
+				<div class="col-4">
+					<div class="row">
+						<button type="button" class="btn btn-web btn-primary" style="font-size: 1.5vw">Subscribe now</button>
+						<button type="button" class="btn btn-web btn-primary ml-2" style="font-size: 1.5vw">Log in</button>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-2">
+					<p id="date2"></p>
+				</div>
+				<script>
+					let date2 = new Date();
+					document.getElementById("date2").innerHTML = date2.toDateString();
+				</script>
+				<div class="col-8">
+					<img alt="Vue logo" src="./assets/monde.png" style="width: 100%">
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</header>
+
+		
+
+		<nav>
+			<div>
+				<a class="nav-item">Earth Science</a>
+				<a class="nav-item">Biology</a>
+				<a class="nav-item">Physics</a>
+				<a class="nav-item">Chemistry</a>
+				<a class="nav-item">Mathematics</a>
+				<a class="nav-item">Computer Science</a>
+				<a class="nav-item">Astronomy</a>
+			</div>
+		</nav>
+
+		<article>
+			<div class="headline">
+				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+					<ul class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./assets/socialmedia.png" alt="Los Angeles" class="d-block w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/tweet.png" alt="Chicago" class="d-block w-100">
+						</div>
+					</div>
+		    	</div>
+				<div class="pt-3 pl-5 pr-5 pb-5" style="color: white; background-color: rgb(30, 10, 35)">
+					<h5>Machines reading comprehension development to monitor social media. Problem: How to recognize irony? </h5>
+					<hr style="background-color: darkcyan">
+					<div class="row">
+						<div class="col-8">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read the article</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container mt-5 mb-5">
+				<div class="row">
+					<div class="col">
+						<div class="card border-primary mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.0vw"><i class="fas fa-square-root-alt text-primary"></i> - Mathematics</h5>
+						  	<div class="card-body text-primary">
+						  		<p class="card-title"><a href="" class="text-primary">Coronavirus death tolls: Why the daily mortality figures can't reflect the true numbers?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-secondary mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-atom text-secondary"></i> - Physics</h5>
+						  	<div class="card-body text-secondary">
+						    	<p class="card-title"><a href="" class="text-secondary">Macron's quantum plan for investments: But what is quantum physic?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-success mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-feather-alt text-success"></i> - Biology</h5>
+						  	<div class="card-body text-success">
+						    	<p class="card-title"><a href="" class="text-success">Pandemy: How is Darwin getting his revenge on Pasteur?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-danger mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-laptop-code text-danger"></i> - Computer Science</h5>
+						  	<div class="card-body text-danger">
+						    	<p class="card-title"><a href="" class="text-danger">Hospital hacks: Why does it seem so simple?</a></p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-6 mb-4">
+						<div class="card border-warning mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-space-shuttle text-warning"></i> - Astronomy</h5>
+						  	<div class="card-body">
+						  		<div class="row">
+							    	<div class="col-7 border-bottom border-warning">
+										<p class="card-title"><a href="" class="text-dark">Scientists' farewell to Arecibo: How does a telescope work?</a></p>
+									</div>
+									<div class="col border-left border-warning">
+										<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning" style="font-size: 1.2vw"><b>ISS LIVE</b></a>
+									</div>
+									<p class="mt-3 ml-3 mr-3 card-text">Looking for high definition views of Earth from the space station? Visit the<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="text-warning ml-2">ISS HD Earth Viewing Experiment</a> (HDEV) on UStream.</p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card border-info mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-globe-europe text-info"></i> - Earth Science</h5>
+						  	<div class="card-body">
+						    	<p class="card-title"><a href="" class="text-dark">New earthquakes in Eastern Europe: How are they caused?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card border-dark mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-flask text-dark"></i> - Chemistry</h5>
+						  	<div class="card-body text-dark">
+						    	<p class="card-title"><a href="" class="text-dark">How COVID-19 has planted the pharmaceutical companies in the spotlights?</a></p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+			    <div class="card" id="game">
+				  <div class="row">
+				    <div class="col-5">
+					    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+							<ul class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./assets/art1.png" alt="Los Angeles" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art2.png" alt="Chicago" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art3.png" alt="New York" class="d-block w-100">
+								</div>
+							</div>
+				    	</div>
+				    </div>
+				    <div class="col-7">
+				      <div class="card-body pr-5">
+				        <h5 class="card-title">Special art exhibition taking place at the Tate Modern that will blow your perspectives and get your mathematical perception upside-down</h5>
+				        <hr style="background-color: darkcyan">
+				        <p class="card-text">The mathematics arrive at the Tate Modern for a period of three months. Many artists and mathematicians will exhibit their works from March 3. We will notably find in this exhibition Matt Enlow, Stephen Kenny, Aaron Moran...</p>
+				        <div class="row">
+							<div class="col-7">
+								<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-web btn-primary">Read more</button>
+							</div>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="row" style="border-bottom: solid 50px rgb(30, 10, 35)">
+				<div class="col-7 p-5">
+					<h5>Paris Agreement under the United Nations Framework Convention on Climate Change could lead to a development of the measures against the Greenhouse gases</h5>
+					<hr style="background-color: darkcyan">
+					<p>The Paris Agreement on climate change is the first universal, legally binding global climate agreement. It was signed on 22 April 2016 and ratified by the European Union on 5 October 2016. This agreement aims to strengthen the global response to the threat of climate change, including by limiting global warning to well below 2°C.</p>
+
+					<div class="row">
+						<div class="col-8">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read more</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 p-5 mr-1" style="background-color: darkcyan">
+					<div class="card card-quote mb-3">
+						<h5 class="card-header"><i class="fas fa-quote-right text-warning"></i> - Quote of the month</h5>
+						<div class="card-body">
+						    <blockquote style="color: lightgrey"><i class="text-warning">“Science and everyday life cannot and should not be separated.”</i><br>– Rosalind Franklin</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container pt-5">
+				<div class="card card-quote mb-3" style="background-color: darkcyan">
+					<h5 class="card-header"><i class="fas fa-image text-warning"></i> - Image of the month</h5>
+					<div class="card-body">
+						<div class="card pb-5">
+							<div class="card-body">
+					    		<img src="./assets/aurore.png" alt="Los Angeles" class="d-block w-100">
+					    		<p style="color: grey">A polar aurora, called "boreal" - © Egil Sjøholt / Pexels</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<footer>
+			<div class="row ml-5 pt-5 mb-2">
+				<img alt="Vue logo" src="./assets/monde-white.png">
+			</div>
+
+			<div class="row ml-5 pt-3" style="font-size: 1.9vw">
+				<a class="nav-item">Earth Science</a>
+				<a class="nav-item">Biology</a>
+				<a class="nav-item">Physics</a>
+				<a class="nav-item">Chemistry</a>
+				<a class="nav-item">Mathematics</a>
+				<a class="nav-item">Computer Science</a>
+				<a class="nav-item">Astronomy</a>
+			</div>
+			<div class="row ml-5 pt-3">
+				<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning" style="color: rgb(30, 10, 35); font-size: 1.9vw"><b>ISS LIVE</b></a>
+			</div>
+
+			<hr style="background-color: grey">
+
+			<div class="row pb-4">
+				<div class="col-7 ml-5">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+
+				<div class="col" >
+					<p><small>© The Ellipsoid Observer 2021</small></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="phone">
+		<header>
+			<div class="row">
+				<div class="col-3">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+				<div class="col-5"></div>
+				<div class="col-4">
+					<div class="row">
+						<button type="button" class="btn btn-web btn-primary" style="font-size: 1.5vw">Subscribe now</button>
+						<button type="button" class="btn btn-web btn-primary ml-2" style="font-size: 1.5vw">Log in</button>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-2">
+					<p id="date3" style="font-size: 1.2vw"></p>
+				</div>
+				<script>
+					let date3 = new Date();
+					document.getElementById("date3").innerHTML = date3.toDateString();
+				</script>
+				<div class="col-8">
+					<img alt="Vue logo" src="./assets/monde.png" style="width: 100%">
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</header>
+
+		
+
+		<nav>
+			<div style="font-size: 1.8vw">
+				<a class="nav-item">Earth Science</a>
+				<a class="nav-item">Biology</a>
+				<a class="nav-item">Physics</a>
+				<a class="nav-item">Chemistry</a>
+				<a class="nav-item">Mathematics</a>
+				<a class="nav-item">Computer Science</a>
+				<a class="nav-item">Astronomy</a>
+			</div>
+		</nav>
+
+		<article>
+			<div class="headline">
+				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+					<ul class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./assets/socialmedia.png" alt="Los Angeles" class="d-block w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/tweet.png" alt="Chicago" class="d-block w-100">
+						</div>
+					</div>
+		    	</div>
+				<div class="pt-3 pl-5 pr-5 pb-5" style="color: white; background-color: rgb(30, 10, 35)">
+					<h5>Machines reading comprehension development to monitor social media. Problem: How to recognize irony? </h5>
+					<hr style="background-color: darkcyan">
+					<div class="row">
+						<div class="col-8">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read the article</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container mt-5 mb-5">
+				<div class="row">
+					<div class="col">
+						<div class="card border-primary mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.0vw"><i class="fas fa-square-root-alt text-primary"></i> - Mathematics</h5>
+						  	<div class="card-body text-primary">
+						  		<p class="card-title"><a href="" class="text-primary">Coronavirus death tolls: Why the daily mortality figures can't reflect the true numbers?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-secondary mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-atom text-secondary"></i> - Physics</h5>
+						  	<div class="card-body text-secondary">
+						    	<p class="card-title"><a href="" class="text-secondary">Macron's quantum plan for investments: But what is quantum physic?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-success mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-feather-alt text-success"></i> - Biology</h5>
+						  	<div class="card-body text-success">
+						    	<p class="card-title"><a href="" class="text-success">Pandemy: How is Darwin getting his revenge on Pasteur?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card border-danger mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-laptop-code text-danger"></i> - Computer Science</h5>
+						  	<div class="card-body text-danger">
+						    	<p class="card-title"><a href="" class="text-danger">Hospital hacks: Why does it seem so simple?</a></p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-6 mb-4">
+						<div class="card border-warning mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-space-shuttle text-warning"></i> - Astronomy</h5>
+						  	<div class="card-body">
+						  		<div class="row">
+							    	<div class="col-7 border-bottom border-warning">
+										<p class="card-title"><a href="" class="text-dark">Scientists' farewell to Arecibo: How does a telescope work?</a></p>
+									</div>
+									<div class="col border-left border-warning">
+										<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning" style="font-size: 1.2vw"><b>ISS LIVE</b></a>
+									</div>
+									<p class="mt-3 ml-3 mr-3 card-text">Looking for high definition views of Earth from the space station? Visit the<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="text-warning ml-2">ISS HD Earth Viewing Experiment</a> (HDEV) on UStream.</p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card border-info mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-globe-europe text-info"></i> - Earth Science</h5>
+						  	<div class="card-body">
+						    	<p class="card-title"><a href="" class="text-dark">New earthquakes in Eastern Europe: How are they caused?</a></p>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col mb-4">
+						<div class="card border-dark mb-3" style="font-size: 1.2vw">
+						  	<h5 class="card-header" style="font-size: 1.2vw"><i class="fas fa-flask text-dark"></i> - Chemistry</h5>
+						  	<div class="card-body text-dark">
+						    	<p class="card-title"><a href="" class="text-dark">How COVID-19 has planted the pharmaceutical companies in the spotlights?</a></p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div>
+			    <div class="pt-5" id="game" style="background-color: rgb(30, 10, 35); color: white">
+				  	<div class="container">
+					    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+							<ul class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+							</ul>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./assets/art1.png" alt="Los Angeles" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art2.png" alt="Chicago" class="d-block w-100">
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/art3.png" alt="New York" class="d-block w-100">
+								</div>
+							</div>
+				    	</div>
+				    </div>
+				    <div class="container">
+				      <div class="card-body pr-5">
+				        <h5 class="card-title">Special art exhibition taking place at the Tate Modern that will blow your perspectives and get your mathematical perception upside-down</h5>
+				        <hr style="background-color: darkcyan">
+				        <p class="card-text">The mathematics arrive at the Tate Modern for a period of three months. Many artists and mathematicians will exhibit their works from March 3. We will notably find in this exhibition Matt Enlow, Stephen Kenny, Aaron Moran...</p>
+				        <div class="row">
+							<div class="col-8">
+								<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+							</div>
+							<div class="col">
+								<button type="button" class="btn btn-web btn-primary">Read more</button>
+							</div>
+						</div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+
+			<div class="row" style="border-bottom: solid 50px rgb(30, 10, 35)">
+				<div class="col p-5">
+					<h5>Paris Agreement under the United Nations Framework Convention on Climate Change could lead to a development of the measures against the Greenhouse gases</h5>
+					<hr style="background-color: darkcyan">
+					<p>The Paris Agreement on climate change is the first universal, legally binding global climate agreement. It was signed on 22 April 2016 and ratified by the European Union on 5 October 2016. This agreement aims to strengthen the global response to the threat of climate change, including by limiting global warning to well below 2°C.</p>
+
+					<div class="row">
+						<div class="col-8">
+							<p class="card-text"><small class="text-muted" >Last updated 2 days ago</small></p>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-web btn-primary">Read more</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pl-5 pr-5 pt-1 pb-1" style="background-color: rgb(30, 10, 35)">
+				<div class="card card-quote m-5" style="background-color: darkcyan">
+					<h5 class="card-header"><i class="fas fa-image text-warning"></i> - Quote of the month</h5>
+					<div class="card-body">
+						<div class="card pb-5">
+							<div class="card-body">
+					    		<blockquote style="color: lightgrey"><i class="text-warning">“Science and everyday life cannot and should not be separated.”</i><br>– Rosalind Franklin</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-5" style="background-color: rgb(30, 10, 35)">
+				<div class="card card-quote" style="background-color: darkcyan">
+					<h5 class="card-header"><i class="fas fa-image text-warning"></i> - Image of the month</h5>
+					<div class="card-body">
+						<div class="card pb-5">
+							<div class="card-body">
+					    		<img src="./assets/aurore.png" alt="Los Angeles" class="d-block w-100">
+					    		<p style="color: grey">A polar aurora, called "boreal" - © Egil Sjøholt / Pexels</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr style="background-color: grey">
+		</article>
+
+		<footer>
+			<div class="row ml-5 pt-5 mb-2">
+				<img alt="Vue logo" src="./assets/monde-white.png">
+			</div>
+
+			<div class="row ml-5 pt-3" style="font-size: 1.8vw">
+				<a class="nav-item">Earth Science</a>
+				<a class="nav-item">Biology</a>
+				<a class="nav-item">Physics</a>
+				<a class="nav-item">Chemistry</a>
+				<a class="nav-item">Mathematics</a>
+				<a class="nav-item">Computer Science</a>
+				<a class="nav-item">Astronomy</a>
+			</div>
+			<div class="row ml-5 pt-3">
+				<a href="http://www.ustream.tv/channel/iss-hdev-payload" target="blank" class="btn btn-warning" style="color: rgb(30, 10, 35); font-size: 1.8vw"><b>ISS LIVE</b></a>
+			</div>
+
+			<hr style="background-color: grey">
+
+			<div class="row pb-4">
+				<div class="col-5 ml-5">
+					<i class="fab fa-twitter-square mr-3" style="font-size:30px;"></i>
+					<i class="fab fa-facebook-square" style="font-size:30px;"></i>
+				</div>
+
+				<div class="col" >
+					<p><small>© The Ellipsoid Observer 2021</small></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
